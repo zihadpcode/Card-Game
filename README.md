@@ -1,2 +1,2 @@
 # Card-Game
-This is a matching card game I created.
+This is a memory card matching game I created.
