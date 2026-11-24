@@ -1,6 +1,6 @@
 # 0002: Card art with unknown rights
 
-Date: 20 Nov 2026. Status: proposed.
+Date: 20 Nov 2026. Status: accepted 22 Nov 2026 (Phase 1 default approved). Updated 23 Nov 2026.
 
 ## Context
 The 11 card images have no source, author or license recorded (docs/requirements.md section 4). The repository is public. The brief's default is to replace them with public domain art if the source stays unknown. Replacing files needs your yes.
@@ -15,3 +15,6 @@ The 11 card images have no source, author or license recorded (docs/requirements
 
 ## Recommendation
 Replace with the Kenney pack, unless you can name a source that allows reuse. Add `CREDITS.md` beside the images either way. What would change this: a verified source for the current images.
+
+## Update, 23 Nov 2026 (Phase 2)
+The user approved the Phase 1 defaults on 22 Nov 2026, so the Kenney pack is the chosen option. The pack page, read again on 23 Nov 2026, still says CC0 but lists no file types or card names. Before any file is replaced, slice S1 opens the download and checks that faces for the ten names and a back exist (assumption 14). If they do not, the fallback is Java2D drawn cards, not the Byron Knoll set. Downloading the pack is an outside action and replacing the files needs the user's yes at that step.

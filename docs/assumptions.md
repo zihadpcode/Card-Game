@@ -9,15 +9,15 @@
 | 5 | The image files are what their names say and `img.zip` holds the same files | Names only. The archive was not opened | Partly checked 20 Nov 2026: `unzip -l` lists the same 11 names plus `.DS_Store` and `__MACOSX` entries. Contents not compared byte for byte |
 
 ## Defaults taken for the Phase 0 open questions
-Phase 0 was approved on 19 Nov 2026. The user said to use the defaults proposed in the brief for any open question. Each line below is a default, user to confirm.
+Phase 0 was approved on 19 Nov 2026. The user said to use the defaults proposed in the brief for any open question. Each line below was a default. On 2026-11-22 the user approved Phase 1 with every default as written, so each is now accepted.
 
 | # | Open question | Default taken | Source of the default | Status |
 |---|---|---|---|---|
-| 6 | Where did the card images come from, and under what license? | Source unknown, so treat the images as unlicensed. Replace them with public domain or CC0 card art. Replacing files still needs your yes at that step. See decision 0002 | docs/brief.md, riskiest assumption | default, user to confirm |
-| 7 | Is this a tutorial follow along? | No. The README credits no tutorial. The work is from CSC 22100 at City College (stated in the Phase 1 task) | docs/brief.md open questions; no tutorial named | default, user to confirm |
-| 8 | May `out/` and both `img.zip` files be removed from the repository? | Yes, remove from tracking and add `.gitignore`. Git history keeps them. The actual removal still needs your yes at that step | docs/revamp-plan.md, proposed restructuring | default, user to confirm |
-| 9 | Plain `javac` script, Gradle or Maven? | Plain `javac` and `java` commands in a script, no build tool | docs/risks.md risk 5, mitigation | default, user to confirm |
-| 10 | Which license for the code? | The brief proposed no default. Proposed now: MIT for the code only, images excluded until their rights are known. Held until course policy is confirmed (assumption 11) | New in Phase 1 | default, user to confirm |
+| 6 | Where did the card images come from, and under what license? | Source unknown, so treat the images as unlicensed. Replace them with public domain or CC0 card art. Replacing files still needs your yes at that step. See decision 0002 | docs/brief.md, riskiest assumption | accepted 2026-11-22 |
+| 7 | Is this a tutorial follow along? | No. The README credits no tutorial. The work is from CSC 22100 at City College (stated in the Phase 1 task) | docs/brief.md open questions; no tutorial named | accepted 2026-11-22 |
+| 8 | May `out/` and both `img.zip` files be removed from the repository? | Yes, remove from tracking and add `.gitignore`. Git history keeps them. The actual removal still needs your yes at that step | docs/revamp-plan.md, proposed restructuring | accepted 2026-11-22 |
+| 9 | Plain `javac` script, Gradle or Maven? | Plain `javac` and `java` commands in a script, no build tool | docs/risks.md risk 5, mitigation | accepted 2026-11-22 |
+| 10 | Which license for the code? | The brief proposed no default. Proposed now: MIT for the code only, images excluded until their rights are known. Held until course policy is confirmed (assumption 11) | New in Phase 1 | accepted 2026-11-22 |
 
 ## New in Phase 1
 | # | Assumption | Basis | How to check |
@@ -25,3 +25,13 @@ Phase 0 was approved on 19 Nov 2026. The user said to use the defaults proposed 
 | 11 | Publishing the game is allowed by the CSC 22100 section it was written for | No CCNY or CUNY rule found on 20 Nov 2026 that forbids publishing your own past coursework. The instructor's own syllabus was not found and may differ | Check your section's syllabus or ask the instructor |
 | 12 | The game was individual work, not a team project | The repository has one author. The CCNY CSC 221 syllabus page says the course requires a team based project | Ask the author |
 | 13 | The response time and startup numbers in docs/requirements.md fit one player on your Mac | No measurement yet. They are targets | Measure in Phase 5 |
+
+## Phase 1 defaults
+On 2026-11-22 the user approved the Phase 1 drafts with every default assumption as written. Lines 11 to 13 above are accepted 2026-11-22 as working assumptions. They still carry a check, since only the author can confirm 11 and 12 and only a measurement can confirm 13.
+
+## New in Phase 2
+| # | Assumption | Basis | How to check |
+|---|---|---|---|
+| 14 | The Kenney Playing Cards Pack holds faces for the ten cards in the name list and at least one back | The pack page on 2026-11-23 states CC0 but does not list its contents | Open the download in Phase 4 slice S1 before any file is replaced |
+| 15 | Starting the clock when the preview ends, not at window open, is what the player expects | Requirement "seconds of play" in docs/requirements.md; preview is not play | Ask the author (question 2 in docs/progress.md) |
+| 16 | GitHub Actions stays free for this public repository | GitHub billing page read 2026-11-23: standard hosted runners are free in public repositories | Read the page again before slice CI goes live |
